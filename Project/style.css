@@ -36,31 +36,26 @@
   gap: 10px;
   align-items: center;
   color: #023047;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: "Space Grotesk";
-  font-size: 20.883px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 21.982px;
+  line-height: 22px;
 }
 .navigation_buttons {
   display: flex;
   align-items: center;
   gap: 32px;
   color: #667085;
-
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
 }
 .navigation_buttons button {
   background-color: white;
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  color: #475467;
   border: none;
-  display: flex;
-  align-items: center;
-  height: 24px;
 }
 #install_button {
   background-color: white;

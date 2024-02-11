@@ -1,6 +1,9 @@
 #landing_page {
+  box-sizing: border-box;
   display: flex;
-  width: 1440px;
+  margin: auto;
+  width: 90%;
+  max-width: 100%;
   flex-direction: column;
   align-items: center;
 }
@@ -35,12 +38,11 @@
   gap: 10px;
   align-items: center;
   color: #023047;
-  font-feature-settings: "clig" off, "liga" off;
   font-family: "Space Grotesk";
-  font-size: 20.883px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 21.982px;
+  line-height: 21px;
 }
 .navigation_buttons {
   display: flex;
@@ -125,6 +127,7 @@
   align-self: stretch;
 }
 .kondi_photo1 {
+  max-width: 100%;
   border-radius: 15px;
 }
 #kondi_photo1 {
@@ -199,8 +202,6 @@
 }
 .frame11 {
   display: flex;
-  width: 832px;
-  height: 400px;
   justify-content: space-between;
   align-items: flex-start;
   flex-shrink: 0;
@@ -249,22 +250,24 @@
   justify-content: center;
   align-items: flex-start;
   gap: 10px;
-  padding: 48px;
   align-self: stretch;
 }
 .frame113 {
   display: flex;
-  height: 102.548px;
+  height: 110px;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   position: absolute;
-  right: 285.372px;
-  bottom: 93.452px;
+  right: 250px;
+  bottom: 30px;
+}
+.frame12,
+.frame112 {
+  padding: 30px 30px 0px 30px;
 }
 .frame12 {
   display: flex;
-  padding: 48px 36px;
   flex-direction: column;
   align-items: flex-start;
   gap: 36px;
@@ -313,14 +316,12 @@
 }
 .frame2 {
   display: flex;
-  width: 1280px;
-  height: 400px;
   align-items: center;
   gap: 48px;
 }
 .frame21 {
   display: flex;
-  padding: 48px 36px;
+  padding: 30px;
   flex-direction: column;
   align-items: flex-start;
   gap: 36px;
@@ -341,12 +342,10 @@
 }
 .frame22 {
   display: flex;
-  width: 832px;
-  padding: 48px;
+  padding: 30px;
   justify-content: center;
-  align-items: flex-start;
-  gap: 72px;
-  flex-shrink: 0;
+  align-items: center;
+  gap: 50px;
   align-self: stretch;
   border-radius: 20px;
   background: #f3f6f8;
@@ -381,8 +380,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: 36px;
-  flex: 1 0 0;
   align-self: stretch;
 }
 .frame221_heading_and_supporting_text {
@@ -403,7 +402,6 @@
   letter-spacing: -0.6px;
 }
 .frame221_supporting_text {
-  width: 365px;
   color: rgba(0, 0, 0, 0.64);
   align-self: stretch;
   font-family: Inter;
@@ -472,7 +470,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 60px;
-  letter-spacing: -0.96px;
+  letter-spacing: -1px;
 }
 .CTA_section_actions {
   display: flex;
@@ -481,12 +479,13 @@
 }
 .CTA_section_image {
   display: flex;
-  padding-top: 239px;
+  padding-top: 240px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   flex: 1 0 0;
-  background: url("images/kondi.jpg"), gray -273.999px / 100% 145.946% no-repeat;
+  background: url("images/kondi.jpg"), gray -275px / 100% 145.946% no-repeat;
+  background-repeat: no-repeat;
 }
 .quote_image_bottom_panel {
   display: flex;
@@ -516,8 +515,8 @@
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
-  line-height: 44px; /* 122.222% */
-  letter-spacing: -0.72px;
+  line-height: 44px;
+  letter-spacing: -0.7px;
   flex: 1 0 0;
 }
 .name_and_text {
@@ -609,11 +608,11 @@
 }
 #footer {
   display: flex;
-  padding: 64px 0px 48px 0px;
+  max-width: 100%;
+  padding: 64px 10px 48px 10px;
   flex-direction: column;
   align-items: center;
   gap: 64px;
-  align-self: stretch;
   background: var(--Gray-800, #1d2939);
 }
 .footer_container1 {
@@ -626,7 +625,7 @@
 }
 .footer_container2 {
   display: flex;
-  width: 1280px;
+  width: 90%;
   justify-content: space-between;
   align-items: center;
   padding: 0px 32px;
@@ -663,10 +662,10 @@
   color: #fff;
   font-feature-settings: "clig" off, "liga" off;
   font-family: Space Grotesk;
-  font-size: 20.883px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 21.982px;
+  line-height: 21px;
 }
 .supporting_text {
   color: var(--Gray-200, #e4e7ec);
@@ -846,36 +845,121 @@ a {
 #nav_menu_button {
   display: none;
 }
+body,
+#landing_page,
+.navigation_header,
+.navigation_container,
+#first_section,
+.first_section_container,
+.desctop_1_container,
+.desctop_1_heading_and_supporting_text,
+#feature_section,
+.feature_section_container2,
+.CTA_section_container,
+.frame1,
+.frame2,
+.quote_image_bottom_panel,
+.footer_container1,
+.frame22 {
+  max-width: 100%;
+}
+.first_section_content1 {
+  padding-right: 30px;
+}
 
-@media only screen and (max-width: 600px) {
-  body,
-  #landing_page,
-  .navigation_header,
-  .navigation_container,
-  #first_section,
-  .first_section_container,
-  .desctop_1_container,
-  .desctop_1_heading_and_supporting_text,
-  #feature_section,
-  .feature_section_container2,
-  .CTA_section_container,
+@media only screen and (max-width: 1200px) {
+  #kondi_photo1 {
+    height: 550px;
+  }
+  .iphone img {
+    width: 13rem;
+  }
+  .desctop_1_heading,
+  .frame111_heading,
+  .frame12_heading,
+  .frame21_heading,
+  .frame221_heading,
+  .feature_section_heading,
+  .CTA_section_heading {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .first_section_supporting_text {
+    padding-right: 20px;
+  }
   .frame1,
+  .CTA_section_container,
+  .frame22 {
+    flex-direction: column;
+  }
   .frame2,
-  .quote_image_bottom_panel,
+  .frame11,
+  .frame22,
   .footer_container1 {
-    max-width: 100%;
+    width: auto;
   }
-  #first_section,
-  #desctop_1 {
-    gap: 40px;
-    padding: 40px 0px 50px 0px;
+  .frame2 {
+    height: auto;
   }
+  .frame11 {
+    align-self: stretch;
+  }
+  .frame12,
+  .CTA_section_content {
+    align-items: center;
+    text-align: center;
+  }
+  .frame22 {
+    padding: 20px;
+    flex-shrink: initial;
+  }
+  .name {
+    font-size: 25px;
+  }
+  #footer {
+    width: 100%;
+  }
+  .footer_container2 {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .frame113 {
+    display: none;
+  }
+  .app_store_actions {
+    padding-left: 100px;
+  }
+}
+@media only screen and (max-width: 800px) {
   .navigation_buttons,
   #install_button,
-  .first_section_content2,
+  .kondi_photo1,
   .frame113,
   .social_icons {
     display: none;
+  }
+  #logo,
+  .first_section_content2,
+  .frame2221 {
+    justify-content: center;
+  }
+  .frame21,
+  .logo_and_supporting_text,
+  .frame2221,
+  .footer_content1 {
+    align-items: center;
+  }
+  .footer_content1 {
+    gap: 10px;
+  }
+  .iphone,
+  .frame11,
+  .first_section_content2 {
+    position: static;
+  }
+  .iphone img {
+    width: 15rem;
   }
 
   #nav_menu_button {
@@ -884,21 +968,38 @@ a {
     display: flex;
   }
   .first_section_content1,
-  .first_section_heading_and_supporting_text {
+  .first_section_heading_and_supporting_text,
+  .frame11 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .first_section_heading,
   .desctop_1_heading,
+  .frame111_heading,
+  .frame12_heading,
+  .frame21_heading,
+  .frame221_heading,
+  .feature_section_heading,
   .CTA_section_heading {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 30px;
   }
 
   .first_section_supporting_text,
-  .desctop_1_supporting_text {
-    font-size: 14px;
+  .desctop_1_supporting_text,
+  .frame111_supporting_text,
+  .frame12_supporting_text,
+  .frame21_supporting_text,
+  .frame221_supporting_text,
+  .feature_section_suppoting_text,
+  .supporting_text,
+  .links_container,
+  .links_heading,
+  .heading,
+  .kobodrop {
+    font-size: 25px;
     width: auto;
   }
   .frame1,
@@ -932,20 +1033,10 @@ a {
     flex-direction: column;
   }
   .first_section_actions img {
-    width: 80px;
-    height: 25px;
+    width: 100px;
+    height: 40px;
   }
-  .frame11 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: static;
-  }
-  .frame12,
-  .frame21,
-  .CTA_section_content {
-    align-items: center;
-  }
+
   .frame1,
   #first_section,
   .frame21,
@@ -956,6 +1047,7 @@ a {
   }
   .feature_section_logos {
     flex-wrap: wrap;
+    padding: 0;
   }
   .feature_section_logo {
     width: 60px;
@@ -964,23 +1056,18 @@ a {
   .frame112 {
     align-self: center;
   }
-  .frame2221 {
-    justify-content: center;
-    align-items: center;
-  }
+
   .rectangle_no_color,
   .rectangle_color,
   .rectangle_logo,
   .rectangle_logo img {
-    height: 50px;
-    width: 60px;
+    height: 65px;
+    width: 70px;
   }
-  .name {
-    font-size: 20px;
-  }
+  .name,
   .t_quote,
   #country {
-    font-size: 14px;
+    font-size: 18px;
   }
   .CTA_section_container,
   #CTA_section,
@@ -988,16 +1075,125 @@ a {
     padding: 5px 0px;
   }
   .CTA_section_image {
-    background-position-x: -126px;
+    background-size: cover;
   }
   .actions {
     flex-direction: row;
   }
-  .footer_content1 {
-    align-items: center;
-    gap: 10px;
+
+  .links_container {
+    gap: 100%;
+  }
+  #footer {
+    width: 95%;
+    max-width: 100%;
+  }
+
+  #logo img {
+    width: 40px;
+  }
+  .frame1 {
+    align-items: normal;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .links_container {
+    gap: 50%;
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .links_heading {
+    font-size: 21px;
+  }
+  .supporting_text {
+    text-align: center;
+  }
+  .rectangle_no_color,
+  .rectangle_color,
+  .rectangle_logo,
+  .rectangle_logo img {
+    height: 55px;
+    width: 60px;
+  }
+  .CTA_section_image {
+    background-position-x: 30%;
+  }
+  .first_section_container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #first_section,
+  #desctop_1 {
+    gap: 40px;
+    padding: 40px 0px;
+  }
+  .navigation_buttons,
+  #install_button,
+  .first_section_content2,
+  .frame113,
+  .social_icons {
+    display: none;
+  }
+  .first_section_heading,
+  .desctop_1_heading,
+  .frame111_heading,
+  .frame12_heading,
+  .frame21_heading,
+  .frame221_heading,
+  .feature_section_heading,
+  .CTA_section_heading {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .first_section_supporting_text,
+  .desctop_1_supporting_text,
+  .frame111_supporting_text,
+  .frame12_supporting_text,
+  .frame21_supporting_text,
+  .frame221_supporting_text,
+  .feature_section_suppoting_text {
+    font-size: 20px;
+    width: auto;
+  }
+  .first_section_heading_and_supporting_text,
+  .first_section_supporting_text,
+  .first_section_heading,
+  .frame112 {
+    padding: 0;
+  }
+  .feature_section_logo {
+    width: 55px;
+    height: 45px;
+  }
+
+  .frame112 img {
+    width: 80%;
+  }
+  .rectangle_no_color,
+  .rectangle_color,
+  .rectangle_logo,
+  .rectangle_logo img {
+    height: 50px;
+    width: 55px;
+  }
+  .name {
+    font-size: 15px;
+  }
+  .t_quote,
+  #country {
+    font-size: 14px;
+  }
+  .CTA_section_image {
+    background-position-x: -126px;
+  }
+  .actions {
+    flex-direction: column;
   }
   .links_container {
-    gap: 70px;
+    gap: 50px;
   }
 }
